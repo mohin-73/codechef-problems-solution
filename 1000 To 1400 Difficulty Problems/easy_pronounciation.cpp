@@ -11,32 +11,32 @@ int main() {
     freopen("output.txt", "w", stdout);
 #endif
 
-    int t;
-    cin >> t;
+    int tc;
+    cin >> tc;
 
-    while (t--) {
+    while (tc--) {
         int n;
         string s;
         cin >> n >> s;
 
-        int consonant_count = 0;
+        int consonant = 0;
         string vowels = "aeiou";
 
         for (int i = 0; i < n; i += 1) {
             if (vowels.find(s[i]) != string::npos) {
-                consonant_count = 0;
+                consonant = 0;
             } else {
-                consonant_count += 1;
+                consonant += 1;
             }
 
-            if (consonant_count == 4) {
+            if (consonant == 4) {
                 cout << "NO\n";
-                goto next_test_case;
+                goto next;
             }
         }
 
         cout << "YES\n";
-        next_test_case:;
+        next:;
     }
 
     return 0;
