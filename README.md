@@ -1,3 +1,3 @@
 ### Eklas Mohin 
 
-CodeChef username : `mohin_73`
+CodeChef Username : `mohin73`
